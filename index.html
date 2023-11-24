@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tablero Tareas</title>
+</head>
+<body>
+    <nav class="nav">
+        <h2>Tablero kanban</h2>
+        <div class="modal" id="modal">
+            <div class="dialogo-modal">
+                <div class="boton">
+                <button class="cerrar"  data-close>
+                    X
+                 </button>
+                </div>
+                <header class="encabezado">Escriba su nueva tarea
+                   
+                </header>
+                <section class="contenido-modal">
+                    <div id="modal-vacia"></div>
+                    <form action="">
+                        <label for="Por-hacer" >Por Hacer:</label>
+                        <input type="text" id="Por-hacer" name="Por-hacer" autofocus>
+                        <button id="Añadir-tarea">Add</button>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </nav>
+    <main> 
+        <div class="container">
+    <div class="to-do">
+        <h4>To Do</h4>
+        <button class="añadir" data-open="modal">+</button>
+    </div>
+    <div class="Doing">
+        <h4>Doing</h4>
+    </div>
+    <div class="Done">
+        <h4>Done</h4>
+    </div>
+</div>
+    </main>
+    <footer class="final">Hecho por &copy;todos los derechos reservados</footer>
+</body>
+</html>
